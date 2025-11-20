@@ -75,6 +75,7 @@ AddEventHandler('skrievo_medical:healplayer', function(closestPlayer)
     end
 end)
 
+
 RegisterServerEvent('skrievo_medical:takeItems')
 AddEventHandler('skrievo_medical:takeItems', function()
     local _source = source
@@ -103,4 +104,5 @@ RegisterServerEvent('medical:giveback')
 AddEventHandler('medical:giveback', function(item)
     local _source = source
     Inventory.addItem(_source, item, 1)
+
 end)
